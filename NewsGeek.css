@@ -1,0 +1,486 @@
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    color: #111111;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #000000;
+}
+
+.navbar-list a, .header-auth a, .subscribe-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-socials, .header-auth, .header-date {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.main-navbar {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 12px;
+    padding-bottom: 30px;
+}
+
+.navbar-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.left-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 12px;
+    padding-right: 50px;
+}
+
+.left-card p {
+    font-size: 0.9rem;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.right-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 52%;
+}
+
+.image-badge {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 70px;
+    padding: 4px 10px;
+    text-transform: capitalize;
+}
+
+.image-badge p {
+    color: #fff;
+}
+
+.hero-image {
+    width: calc(100% - 50px);
+    height: 410px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.date-time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+    color: #767676;
+    text-transform: capitalize;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.meta-separator {
+    color: #ccc;
+}
+
+.top-image, .bottom-image{
+    width: 240px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.media-pair {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: -50px;
+    padding-right: 150px;
+}
+
+.read-news-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+    color: #666666;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: color 0.2s ease;
+}
+
+.read-news-link:hover {
+    color: #0066cc;
+}
+
+.opinion-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-details span {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #1a73e8;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline .read-news-link {
+    margin-top: -15px;
+}
+
+.right-card h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #111111;
+    margin-top: -5px;
+}
+
+.audio-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    padding: 4px 10px;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+    color: #767676;
+    margin-top: -15px;
+}
+
+.audio-container hr {
+    flex: 1;
+    height: 3px;
+    background-color: #767676;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 18px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  background: #6225e6;
+  transition: 1s;
+  box-shadow: 3px 3px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 5px 5px 0 #fbc638;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 15px;
+}
+
+.span {
+  transform: skewX(15deg);
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+}
+
+.second {
+  width: 12px;
+  height: 12px;
+  margin-left: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #fbc638;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+.editorial-banner {
+    width: 100%;
+    height: 180px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.editorial-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.latest-news-section {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #111111;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.news-grid {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.grid-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.grid-card h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #111111;
+    margin-bottom: 12px;
+}
+
+.grid-card .read-news-link {
+    margin-top: auto;
+}
+
+.main-footer {
+    width: 100%;
+    background-color: #fafafa;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-brand {
+    flex: 2;
+}
+
+.footer-brand h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: #555555;
+    line-height: 1.5;
+    padding-right: 30px;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #111111;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #0066cc;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: #767676;
+}
+
+.footer-bottom .footer-socials {
+    display: flex;
+    gap: 20px;
+    color: #555555;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.footer-bottom .footer-socials i:hover {
+    color: #0066cc;
+}
